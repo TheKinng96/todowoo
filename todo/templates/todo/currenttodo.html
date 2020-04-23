@@ -1,0 +1,13 @@
+{% extends 'todo/base.html' %}
+
+{% block content %}
+current
+
+<ul>
+    {% for task in tasks %}
+    <li>
+        {{ task.title }}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
